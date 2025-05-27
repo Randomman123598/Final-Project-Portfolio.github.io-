@@ -1,76 +1,94 @@
+/* Reset & base styles */
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
-  background: #ffe6f0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffe6eb;
   color: #333;
 }
 
+/* Header */
 header {
-  background: #ffb6c1; 
+  background-color: #ffb6c1;
   color: white;
-  padding: 40px 20px;
   text-align: center;
+  padding: 2rem 1rem;
 }
 
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+}
+
+/* About section */
 .about {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 30px 20px;
-  background-color: #fff0f5;
+  background-color: #ffeef2;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
+/* Projects section */
 .projects {
   max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
 }
 
 .projects h2 {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #d6336c;
+  color: #d6006d;
+  margin-bottom: 2rem;
 }
 
+/* Project cards */
 .project {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 48%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  transition: transform 0.2s
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 450px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project h3 {
   margin-top: 0;
-  color: #d6336c;
+  color: #d6006d;
 }
 
-a {
-  color: #d6336c;
+.project a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #d6006d;
   text-decoration: none;
   font-weight: bold;
 }
 
-a:hover {
-  text-decoration: underline;
+.project:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Responsive Grid for projects */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 20px;
-  background: #ffdce5;
-  margin-top: 40px;
-  font-size: 0.9rem;
-}
-.project:hover {
-  transform: translateY(-8px) ;
+  padding: 1rem;
+  background-color: #ffb6c1;
+  color: white;
+  margin-top: 2rem;
 }
