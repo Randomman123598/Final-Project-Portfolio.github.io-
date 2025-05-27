@@ -1,12 +1,12 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #e6f2ff;
-  color: #333;
+  background-color: #d0ebff; /* Light pastel blue */
+  color: #1e3a5f; /* Deep navy blue for text */
 }
 
 header {
-  background-color: #007acc;
+  background-color: #339af0; /* Medium blue */
   color: white;
   text-align: center;
   padding: 2rem 1rem;
@@ -23,7 +23,7 @@ header p {
 }
 
 .about {
-  background-color: #f0f8ff;
+  background-color: #e7f5ff; /* Very light blue */
   max-width: 800px;
   margin: 2rem auto;
   padding: 2rem;
@@ -39,7 +39,7 @@ header p {
 }
 
 .projects h2 {
-  color: #005b9f;
+  color: #1864ab; /* Darker blue title */
   margin-bottom: 2rem;
 }
 
@@ -51,7 +51,7 @@ header p {
 }
 
 .project {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 14px;
   padding: 1.5rem;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
@@ -59,20 +59,20 @@ header p {
 }
 
 .project h3 {
-  color: #007acc;
+  color: #228be6; /* Vivid blue */
 }
 
 .project a {
   display: inline-block;
   margin-top: 0.5rem;
-  color: #007acc;
+  color: #1c7ed6; /* Button/link blue */
   font-weight: bold;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .project a:hover {
-  color: #004f85;
+  color: #1864ab;
 }
 
 .project:hover {
@@ -83,12 +83,14 @@ header p {
 .project.center {
   margin: 3rem auto 0;
   max-width: 400px;
+  background-color: #f0f9ff; /* Slightly tinted blue */
+  border: 2px solid #228be6;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #007acc;
+  background-color: #339af0;
   color: white;
   margin-top: 3rem;
 }
