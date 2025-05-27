@@ -1,14 +1,14 @@
-/* Reset & base styles */
+ /* Reset and base styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #ffe6eb;
+  background-color: #e6f2ff;
   color: #333;
 }
 
 /* Header */
 header {
-  background-color: #ffb6c1;
+  background-color: #007acc;
   color: white;
   text-align: center;
   padding: 2rem 1rem;
@@ -20,13 +20,13 @@ header h1 {
 }
 
 header p {
-  margin: 0.5rem 0 0;
-  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
 }
 
-/* About section */
+/* About Section */
 .about {
-  background-color: #ffeef2;
+  background-color: #f0f8ff;
   max-width: 800px;
   margin: 2rem auto;
   padding: 2rem;
@@ -34,61 +34,69 @@ header p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* Projects section */
+/* Project Gallery */
 .projects {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 2rem auto;
-  padding: 0 1rem;
+  padding: 1rem;
   text-align: center;
 }
 
 .projects h2 {
-  color: #d6006d;
+  color: #005b9f;
   margin-bottom: 2rem;
 }
 
-/* Project cards */
+/* Project Grid Layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Project Card */
 .project {
   background-color: white;
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 1.5rem;
-  margin: 1rem auto;
-  max-width: 450px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project h3 {
-  margin-top: 0;
-  color: #d6006d;
+  color: #007acc;
 }
 
 .project a {
   display: inline-block;
   margin-top: 0.5rem;
-  color: #d6006d;
-  text-decoration: none;
+  color: #007acc;
   font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project a:hover {
+  color: #004f85;
 }
 
 .project:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* Responsive Grid for projects */
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+/* Centered Project */
+.project.center {
+  margin: 3rem auto 0;
+  max-width: 400px;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #ffb6c1;
+  background-color: #007acc;
   color: white;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
